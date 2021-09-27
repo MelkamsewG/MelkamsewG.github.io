@@ -5,25 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first page</title>
+    <title>Well come to Melkamu's page</title>
 
 </head>
 
 <body>
-    <pre>My short history 
-        <p><br>
-            
-        </p>
-    </pre>
-
-
+    <img src="myImage.jpg" alt="Melke" width="300" height="400">
+    <h1>Hello World</h1>
+    <p id='linkMe'>section </p>
+    <pre>My short history<p></p>
+        </pre>
     <!-- <p> Hello World!</p> -->
     <form>
         <label> Input:</label> <br>
         <input type='text' placeholder="first name" /><br>
         <label> Output:</label><br>
         <input type='text' placeholder="last name" /> <br>
-        <button>Add to Btn</button>
+        <button>Add to Btn</button><br>
+
+        <h4>My Calculator</h4>
+        <p>
+            <input type="text" id="first" placeholder="first value"><br><br>
+            <input type="text" id="second" placeholder="second value"> <br><br>
+        </p>
+
+        <p>operation:</p>
+        <button onclick="calculator('+')"> + </button>
+        <button onclick="calculator('-')"> - </button>
+        <button onclick="calculator('/')"> / </button>
+        <button onclick="calculator('*')"> * </button><br><br>
+        <button onclick="calculator('Reset')"> Reset </button>
+        <button onclick="calculator('=')"> = </button>
+        <!-- <p>Result</p>
+        <p>Result</p> -->
+        </br>
+        <output id="result">
     </form>
 </body>
 
