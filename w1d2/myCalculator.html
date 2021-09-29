@@ -5,7 +5,7 @@
 </head>
 <style>
     label {
-        margin: 30px;
+        margin: 40px;
     }
     
     div {
@@ -13,37 +13,26 @@
         border: 2px solid orange;
         padding: 10px;
         width: 275px;
-        height: 60px;
+        height: 40px;
     }
 </style>
 
 <body>
-    Student Name
+    Input
     <div>
-
-        <lable>Input</lable>
-        <input type="text" placeholder="your first name"><br>
-        <lable>Output</lable>
-        <input type="text" placeholder="your last name"><br>
-        <button>click to add name</button><br>
+        <input type="text" id="items" value=" " placeholder="write some thing"><br>
     </div>
-    course taken
-    <div>
-        <lable1>Course Name</lable1>
-        <input type="text" placeholder="course name"><br>
-        <lable1>Course code</lable1>
-        <input type="text" placeholder="course code"><br>
-        <button>click to add course</button><br>
-    </div>
+    Output
+    <div></div>
 
-
-    <h4>My Calculator</h4>
+    <input type="button" value="click to add" onclick="appendItem()" <br>
+    <p>My Calculator</p>
 
     <p>Firist Value</p>
-    <input type="text" id="firstValue" value="5" laceholder="first value "><br>
+    <input type="text" id="firstValue" value="5">
     <p>Firist Value</p>
-    <input type="text" id="secondValue" value="5" laceholder="second value "><br>
-    <!-- </p> -->
+    <input type="text" id="secondValue" value="5">
+
 
     <p>operation:</p>
     <input type="button" value="+" onclick="addition()">
@@ -51,11 +40,39 @@
     <input type="button" value="*" onclick="multiplication()">
     <input type="button" value="/" onclick="division()">
 
+    <p>Result = 10</p>
+
     <script>
+        function appendItem() {
+            let list = document.getElementById("items")
+            alert(list.value)
+        }
+
         function addition() {
             let firstValue = document.getElementById("firstValue")
             let secondValue = document.getElementById("secondValue")
-            let sum = firsValue + secondValue;
+            let sum = firsValue.value + secondValue.value;
+            alert(sum);
+        }
+
+        function subtraction() {
+            let firstValue = document.getElementById("firstValue")
+            let secondValue = document.getElementById("secondValue")
+            let sum = firsValue.value - secondValue.value;
+            alert(sum);
+        }
+
+        function multiplication() {
+            let firstValue = document.getElementById("firstValue")
+            let secondValue = document.getElementById("secondValue")
+            let sum = firsValue.value * secondValue.value;
+            alert(sum);
+        }
+
+        function division() {
+            let firstValue = document.getElementById("firstValue")
+            let secondValue = document.getElementById("secondValue")
+            let sum = firsValue.value / secondValue.value;
             alert(sum);
         }
     </script>
