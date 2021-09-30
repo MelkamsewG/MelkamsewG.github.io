@@ -16,11 +16,19 @@
     <p>
         <input type="number" id="byQuantity" placeholder="Quantity" value="" />
     </p>
-    <button onclick="addToList();">Add To List</button><br>
+    <p>
+        <button onclick="addToList();">Add To List</button><br>
+    </p>
+    <p>
+        Ratings<br>
+        <input type="text" id="item" value="" /><br>
+        <button onclick="editItem()" ;>edit item</button>
+        <button onclick="removeItem()" ;>remove item</button>
+    </p>
     <caption type="button">
 
     </caption>
-    <table border="">
+    <table>
         <tr>
             <th>Item Name </th>
             <th>Category</th>
@@ -46,7 +54,36 @@
             cel2.innerHTML = itemCategory;
             cel3.innerHTML = itemQuantity;
         }
+
+        function editItem(target) {
+            let edited = document.getElementById("byItemName").value;
+            edited = target;
+            alert(edited);
+        }
+
+        function removeItem() {
+            let target = document.getElementById("byItemName").value;
+            delete target;
+            alert("deleted item:" + target);
+        }
+
+        function filterItem() {
+            let itemlist = document.getElementById("itemList");
+            document.getElementById("itemList").value = itemList.options[itemList.selectedIndex].value;
+        }
     </script>
+
+    <form>
+        <p> Select the item using dropdown list </p>
+        <select id="itemList" onchange="filterItem()">  
+    <option> Choose Item </option>  
+    <option> byItemName </option>  
+    <option> byCategory </option>  
+    <option> byQuantity </option>  
+        </select>
+        <p> Your selected Item is:
+            <input type="text" id="byItemName" value="" /> </p>
+    </form>
 </body>
 
 </html>
