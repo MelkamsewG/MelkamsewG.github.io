@@ -12,9 +12,29 @@
             position: top;
         }
         
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
         .mainDiv {
             margin: 10px;
-            ;
             border: 1px solid green;
         }
         
@@ -27,7 +47,7 @@
         
         .sidebar {
             border: 1px lightblue;
-            position: left;
+            position: right;
         }
     </style>
 
@@ -38,38 +58,42 @@
 
         <div class="topbar">
             <p></p>
-            <div1> An example post</div1>
-            <div1>Home</div1>
-            <div2>recent Posts</div2>
-            <div3>About Me</div3>
-            <div3>Contact Me</div3>
+            <div class="topnav">
+                <a href="#">Home</a>
+                <a href="#">Recent posts</a>
+                <a href="#">Blogs</a>
+                <a href="#">About Me</a>
+                <a href="#">Contact Me</a>
 
-        </div>
-        <div class="mainleft">
-
-            <div>
-                <p>An example #1</p><b></b>
-                <input type="text" value="">
-            </div> <br>
-
-            <div>
-                An example #2
             </div>
-            <input type="text" value=""><br>
 
-            <div>
-                An examle #3
-            </div>
-            <input type="text" value=""><br>
-        </div>
 
-    </Div>
-    <div class="sidebar">
-        <div1>Home</div1>
-        <div2>Recent posts</div2>
-        <div3>About Me</div3>
-        <div3>contact Me</div3>
-    </div>
+            <!-- <div class="sidebar">
+            <div1 class="side1">Home</div1>
+            <div2 class="side2">Recent posts</div2>
+            <div3 class="side3">About Me</div3>
+            <div3 class="side4">contact Me</div3>
+        </div> -->
+            This is the first paragraph
+
+            <div class="row">
+                <div class="column">
+                    <h2>Column</h2>
+                    <p>This is the first paragraph</p>
+                </div>
+
+                <div class="column">
+                    <h2>Column</h2>
+                    <p>This is the second paragraph</p>
+                </div>
+
+                <div class="column">
+                    <h2>Column</h2>
+                    <p>This is the third paragraph</p>
+                </div>
+
+            </Div>
+
 
 </body>
 
