@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ASSIGNMENT LIST</title>
+</head>
+
+<body>
+    <h1>WELCOME TO CS 315
+    </h1>
+    <li>
+        <a href="/CS315/w1d2/index.html">LAB w1d2 </a>
+        <a href="/CS315/w1d2/inventory.html">LAB w1d2 </a>
+        <a href="/CS315/w1d2/calculator.html">LAB w1d2 </a>
+    </li>
+
+    <p>Item Name</p>
+    <p>
+        <input type="text" id="byItemName" placeholder="item" value="" />
+    </p>
+    <p>Item Category</p>
+    <p>
+        <input type="text" id="byCategory" placeholder="category" value="" />
+    </p>
+    <p>Item Quantity</p>
+    <p>
+        <input type="number" id="byQuantity" placeholder="Quantity" value="" />
+    </p>
+    <button onclick="addToList();">Add To List</button><br>
+    <caption type="button">
+
+    </caption>
+    <table border="">
+        <tr>
+            <th>Item Name </th>
+            <th>Category</th>
+            <th>Quantity</th>
+        </tr>
+
+    </table>
+    <script>
+        function addToList() {
+            let itemName = document.getElementById("byItemName").value;
+            let itemCategory = document.getElementById("byCategory").value;
+            let itemQuantity = document.getElementById("byQuantity").value;
+
+            let table = document.getElementsByTagName('table')[0];
+
+            let newRow = table.insertRow(table.rows.length / 1 + 0);
+
+            let cel1 = newRow.insertCell(0);
+            let cel2 = newRow.insertCell(1);
+            let cel3 = newRow.insertCell(2);
+
+            cel1.innerHTML = itemName;
+            cel2.innerHTML = itemCategory;
+            cel3.innerHTML = itemQuantity;
+        }
+    </script>
+
+</body>
+
+</html>
