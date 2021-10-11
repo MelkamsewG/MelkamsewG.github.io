@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <p>Item Name</p>
+    <p>
+        <input type="text" id="byItemName" placeholder="item" value="" />
+    </p>
+    <p>Item Category</p>
+    <p>
+        <input type="text" id="byCategory" placeholder="category" value="" />
+    </p>
+    <p>Item Quantity</p>
+    <p>
+        <input type="number" id="byQuantity" placeholder="Quantity" value="" />
+    </p>
+    <p>
+        <button onclick="addToList();">Add To List</button><br>
+    </p>
+    <p>
+        Ratings<br>
+        <input type="text" id="item" value="" /><br>
+        <button onclick="editItem()" ;>edit item</button>
+        <button onclick="removeItem()" ;>remove item</button>
+    </p>
+    <caption type="button">
+
+    </caption>
+    <table>
+        <tr>
+            <th>Item Name </th>
+            <th>Category</th>
+            <th>Quantity</th>
+        </tr>
+
+    </table>
+    <script>
+        function addToList() {
+            let itemName = document.getElementById("byItemName").value;
+            let itemCategory = document.getElementById("byCategory").value;
+            let itemQuantity = document.getElementById("byQuantity").value;
+
+            let table = document.getElementsByTagName('table')[0];
+
+            let newRow = table.insertRow(table.rows.length / 1 + 0);
+
+            let cel1 = newRow.insertCell(0);
+            let cel2 = newRow.insertCell(1);
+            let cel3 = newRow.insertCell(2);
+
+            cel1.innerHTML = itemName;
+            cel2.innerHTML = itemCategory;
+            cel3.innerHTML = itemQuantity;
+        }
+
+        function editItem(target) {
+            let edited = document.getElementById("byItemName").value;
+            edited = target;
+            alert(edited);
+        }
+
+        function removeItem() {
+            let target = document.getElementById("byItemName").value;
+            delete target;
+            alert("deleted item:" + target);
+        }
+
+        function filterItem() {
+            let itemlist = document.getElementById("itemList");
+            document.getElementById("itemList").value = itemList.options[itemList.selectedIndex].value;
+        }
+    </script>
+
+    <form>
+        <p> Select the item using dropdown list </p>
+        <select id="itemList" onchange="filterItem()">  
+    <option> Choose Item </option>  
+    <option> byItemName </option>  
+    <option> byCategory </option>  
+    <option> byQuantity </option>  
+        </select>
+        <p> Your selected Item is:
+            <input type="text" id="byItemName" value="" /> </p>
+    </form>
+</body>
+
+</html>
