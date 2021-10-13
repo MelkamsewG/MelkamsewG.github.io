@@ -17,7 +17,7 @@
             border-radius: 3%;
         }
         
-        div>h5 {
+        h5 {
             position: center;
         }
     </style>
@@ -25,7 +25,12 @@
 
 <body>
     <div class="container">
-        <h5>Responsive registration form</h5>
+
+        <div class="row justify-content:center">
+            <div class="col justify-content:center" style="margin-left: 120px;font-size:bold 15px;">Responsive registration form</div>
+
+        </div>
+        <!-- <h5>Responsive registration form</h5> -->
 
         <div class="  form-group mb-3">
 
@@ -36,22 +41,26 @@
 
             <div class="input-group" style="padding-top:10px">
                 <div class="input-group-addon">@</div>
-                <input class="form-control" placeholder="password" id="email" name="email" type="text" />
+                <input class="form-control" placeholder="password" id="password" name="password" type="text" />
             </div>
+
             <div class="input-group" style="padding-top:10px">
                 <div class="input-group-addon">@</div>
-                <input class="form-control" placeholder="Re-type password" id="email" name="email" type="text" />
+                <input class="form-control" placeholder="Re-type password" id="password" name="password" type="text" />
             </div>
-            <!-- addon icons on rows-->
-            <div class="row gx-5 justify-content:auto">
 
-                <div class="col-4">
+            <!-- addon icons on rows-->
+            <div class="row gx-5 justify-content:auto" style="margin-top:20px">
+
+                <div class="col">
                     <div class="input-group-addon">@<input type="text" /></div>
                 </div>
+
                 <div class="col">
-                    <div class="input-group-addon">@</div>
-                    <input type="text" />
+                    <div class="input-group-addon">@<input type="text" /></div>
                 </div>
+
+
 
 
                 <div class="row gx-5px" style="margin-top: 20px;margin-left: 10px;">
