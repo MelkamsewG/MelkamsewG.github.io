@@ -27,7 +27,7 @@
     <div class="container">
 
         <div class="row justify-content:center">
-            <div class="col justify-content:center" style="margin-left: 120px;font-size:bold 15px;">Responsive registration form</div>
+            <div class="col overflow-none justify-content:center position start 50" style="margin-left: 120px;font-size:bold 15px;">Responsive registration form</div>
 
         </div>
         <!-- <h5>Responsive registration form</h5> -->
@@ -53,37 +53,42 @@
             <div class="row gx-5 justify-content:auto" style="margin-top:20px">
 
                 <div class="col">
-                    <div class="input-group-addon">🦸‍♂️<input type="text" /></div>
+                    <div class="input-group-addon">🦸‍♂️<input type="text" placeholder="first name" /></div>
                 </div>
 
                 <div class="col">
-                    <div class="input-group-addon">🦸‍♂️<input type="text" /></div>
+                    <div class="input-group-addon">🦸‍♂️<input type="text" placeholder="last" /></div>
+                </div>
+
+                <!-- radio buttons -->
+                <div class="radio" style="margin-top: 20px;">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="melke">
+                        <labe>Male</labe>
+
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="melke">
+                        <labe>Female</labe>
+
+                    </div>
                 </div>
 
 
 
 
-                <div class="row gx-5px" style="margin-top: 20px;margin-left: 10px;">
-                    <div class="col">
-                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Male</label>
-                    </div>
 
-                    <div class="col">
-                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Female</label>
-                    </div>
-
-                    <div>
-                        <!-- country selector -->
-                        <select class="" style="margin-top: 20px;">
+                <div>
+                    <!-- country selector -->
+                    <select class="" style="margin-top: 20px;">
                                     <option selected>Country</option>
                                     <option value="1">India</option>
                                     <option value="2">USA</option>
                                     <option value="3">Ethiopia</option>
                                     <option value="4">Canada</option>
                                 </select>
-                    </div>
+
 
                     <!-- Checked box -->
                     <div class="" style="margin-top: 20px;">
@@ -96,7 +101,7 @@
                         <label class="form-check-label" for="flexCheckDefault">I want to receive newsletter</label>
                     </div>
 
-                    <div class="row" style="margin-top:20px"><input type="button" value="Register" /></div>
+                    <div class="row" style="margin-top:20px; margin-left: 20px; margin-right: 20px;"><input type="button" value="Register" /></div>
 
 
                 </div>
@@ -108,6 +113,8 @@
         </div>
 
     </div>
+
+
 
 
 </body>

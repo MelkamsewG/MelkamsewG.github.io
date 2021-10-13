@@ -10,18 +10,17 @@
 </head>
 
 <body>
-    <label>Name : Soo</label>
+    <input>Name : Hi Melkamu!</input>
     <button onclick="edit()">Edit</button>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('email');
         console.log(urlParams.get('email'));
-        let label = document.getElementsByTagName("input")[0];
-        label.innerHTML = urlParams.get('email') + " " + urlParams.get("email");
+        let input = document.getElementsByTagName("input")[0];
+        IDBOpenDBRequest.innerHTML = urlParams.get('email') + " " + urlParams.get("email");
 
         function edit() {
-            window.location.href =
-                "../index.html";
+            window.location.href = "../w3d2/index.html";
         }
     </script>
 </body>
