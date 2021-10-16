@@ -30,11 +30,15 @@
     <script>
         function Login() {
             let email = document.getElementById("email");
-            let pwd = document.getElementById("email");
-            if (email == "manager@email.com" && pwd == "passw")
+            let pwd = document.getElementById("pass");
+            if (email == "manager@email.com" && pwd == "pass")
                 window.location.href = "inventory.html";
             else
-                window.location.html = selectedProduct.html;
+            // window.location.html = selectedProduct.html;
+
+            // window.location.href = "http://mywebsite.com/home.html";
+
+                window.location.href = "selectedproduct.html";
         }
     </script>
 
@@ -46,7 +50,7 @@
         <div style="justify-self: center;">email<input type="text" id="email"></input>
         </div>
 
-        <div style="justify-self: center;">password<input type="text" id="passw"></input>
+        <div style="justify-self: center;">password<input type="text" id="pass"></input>
         </div>
 
         <div style="justify-self: center;">
