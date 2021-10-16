@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 20px;
+            border: blue solid;
+            background: lightcyan;
+            padding: 40px 40px 40px 40px;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+        }
+        
+        .flower {
+            /* align-self: center; */
+            border-radius: 50%;
+            /* position: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function Login() {
+            let email = document.getElementById("email");
+            let pwd = document.getElementById("email");
+            if (email == "manager@email.com" && pwd == "passw")
+                window.location.href = "inventory.html";
+            else
+                window.location.html = selectedProduct.html;
+        }
+    </script>
+
+    <div class="container">
+
+        <img src="../images/flower.png" style="justify-self: center;" />
+
+
+        <div style="justify-self: center;">email<input type="text" id="email"></input>
+        </div>
+
+        <div style="justify-self: center;">password<input type="text" id="passw"></input>
+        </div>
+
+        <div style="justify-self: center;">
+            <input type="button" id="email" value="Login" onclick="Login()" /></div>
+
+        <div class="forgot"></div>
+        <div> <a href="# ">forgot password?</a></div>
+
+        <div> <a href="signUp.html">New User? sighUp</a></div>
+
+    </div>
+
+
+</body>
+
+</html>
