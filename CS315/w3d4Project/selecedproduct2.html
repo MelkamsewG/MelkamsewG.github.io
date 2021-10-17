@@ -6,36 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 20px; 
+    margin-right: 0px;
+    color:black
+    
+}
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .items{
+            display:flex
+        }
+        .header{
+            display: flex;
+            justify-content:space-between ;
+            border: solid 1px rgb(171, 221, 148);
+            margin-top: 0px;
+            margin-bottom: 10px;
+        
+        }
+        .topbtn :hover{
+            display: flex;
+            background: lightblue ;
+            
+
+        }
+    </style>
 </head>
 
 <body>
-    <div class="counter">
-        <h1>Item selected</h1>
-        <div class="counter-inner">
-            <div class="total-product">
-                <img src="../images/necklace.jpg">
-                <div>
-                    <h5>price: $135</h5>
-                    <h5>Quantity: 0</h5>
-                    <h5>Total price: 0</h5>
-                </div>
-            </div>
+             
 
-            <button class="btn" id="minus" onclick="decrease()">-</button>
-            <input type="number" id="input" value="0">
-            <button class="btn" id="plus" onclick="increase()">+</button>
-            <button class="btn btn-buy">Buy it now</button>
+                <header class="header">
+                    <div class="topbtn">
+                        <button>go to main page</button>
+                        <button>login</button>
+                        <button><img src = "../images/cart.png"></button>                       
+                       
+                    </div>       
+                </header>
+                
+             
+    
+        <div class="container">      
+        
+            
+                    <div class="card" style="width: 8rem;">
+                            <img src="../images/necklace.jpg" style="width:100%">
+                            <h6>AXUM CROSS - ANTIQUE 14K GOLD PLATED</h6>
+                            <p class="price">$135.00</p>
+                    
+                            <a href="itemdescription.html">itemdescription</a>
+                    
+                            <p>product rating: <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg"> <br>
+
+                                    <input type="number" id="input" value="0">
+                                    <button class="btn" id="plus" onclick="increase()">+</button>
+                                    <button class="btn btn-buy">Buy it now</button>
+                                    <button onclick="addToCArt()">Add to Cart</button>                         
+                                                                                            
+                            </p>  
+                    </div>    
+                
+           
+                    <div class="card" style="width: 8rem;">
+                            <img src="../images/earring.jpg" style="width:100%">
+                            <h6>TSIRUR EAR JACKET - 14K GOLD PLATED</h6>
+                            <p class="price">$95.00</p>
+                    
+                            <a href="itemdescription.html">itemdescription</a>
+                    
+                            <p>product rating: <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg">
+                                <img src="../images/rating.jpg"> <br>
+
+                                <div>
+                                    <button class="btn" id="minus" onclick="decrease()">-</button>
+                                    <input type="number" id="input" value="0">
+                                    <button class="btn" id="plus" onclick="increase()">+</button>
+                                    <button class="btn btn-buy">Buy it now</button>
+                                    <button onclick="addToCArt()">Add to Cart</button>                                
+                                </div>
+                                                            
+                            </p>                    
+                    </div>  
+            
+                    <div class="card" style="width: 8rem;">
+                        <img src="../images/necklace2.jpg" style="width:100%">
+                        <h6>TSIRUR STATEMENT NECKLACE - 14K GOLD PLATED</h6>
+                        <p class="price">$170.00</p>
+                
+                        <a href="itemdescription.html">itemdescription</a>
+                
+                        <p>product rating: <img src="../images/rating.jpg">
+                            <img src="../images/rating.jpg">
+                            <img src="../images/rating.jpg">
+                            <img src="../images/rating.jpg">
+                            <img src="../images/rating.jpg"> <br>
+
+                            
+                                <button class="btn" id="minus" onclick="decrease()">-</button>
+                                <input type="number" id="input" value="0">
+                                <button class="btn" id="plus" onclick="increase()">+</button>
+                                <button class="btn btn-buy">Buy it now</button>
+                                <button onclick="addToCArt()">Add to Cart</button>                            
+                        </p>                    
+                    </div>                
+            
 
         </div>
 
-    </div>
-
     <script>
-        function increase() {
+        // function increase() {
 
-        }
-
-
+        // }
 
         const plusBtn = document.getElementById('plus');
         plusBtn.addEventListener('click', function increase() {
@@ -76,6 +173,19 @@
 
         })
     </script>
+
+
+
+<hr>
+    <footer class="footer" style="padding-top: 0px;">
+        <span>share the product on:📧</span>
+        <img src="../images/mail.jpg">
+        <img src="../images/tweeter.jpg">
+        <img src="../images/facebook.jpg">
+        <img src="../images/pine.jpg">
+
+    </footer>
+
 
 </body>
 
