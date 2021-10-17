@@ -1,0 +1,29 @@
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    color: black
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.items {
+    display: flex
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px rgb(171, 221, 148);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.topbtn :hover {
+    display: flex;
+    background: lightblue;
+}
