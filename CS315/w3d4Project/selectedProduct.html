@@ -51,19 +51,29 @@
 
 </head>
 
+<body>
 
+    
 <header>
     <div class="header">
         <h4>Product Selected</h4>
     </div>
 </header>
+<style>
+    .container{
+        border: solid 2px;
+         border-radius: 2%;
+         padding-bottom: 10px;
+         
+    }
+</style>
 
-< class="container" style="border: solid 2px; border-radius: 2%;padding-bottom: 10px;">
 
 
 
 
-    <div class="card">
+<div class="container">
+    <div class="card" style="width: 18rem;">
         <img src="../images/necklace.jpg" style="width:100%">
         <h6>AXUM CROSS - ANTIQUE 14K GOLD PLATED</h6>
         <p class="price">$135.00</p>
@@ -78,27 +88,21 @@
         </p>
     </div>
 
-
+</div>   
 
     <!-- country selector -->
-    <select class="" style="margin-top: 20px; margin-left: 20px;">
+        <select class="" style="margin-top: 20px; margin-left: 20px;">
             <option selected>quantity</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
         </select>
-    <button>Add to Cart</button>
+    <button onclick="addToCArt()">Add to Cart</button>
     <button>Buy it now</button>
     <button>Continue Shopping</button>
 
-
-
-
-
     </div>
-
-
 
     <hr>
     <footer class="footer" style="padding-top: 0px;">
@@ -111,6 +115,6 @@
     </footer>
 
 
-    </body>
+</body>    
 
 </html>

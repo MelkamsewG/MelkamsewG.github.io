@@ -29,9 +29,9 @@
 <body>
     <script>
         function Login() {
-            let email = document.getElementById("email");
-            let pwd = document.getElementById("pass");
-            if (email == "manager@email.com" && pwd == "pass")
+            let email = document.getElementById("email").value;
+            let pw = document.getElementById("pass").value;
+            if (email == "manager@email.com" && pw == "pass")
                 window.location.href = "inventory.html";
             else
             // window.location.html = selectedProduct.html;
@@ -47,10 +47,14 @@
         <img src="../images/flower.png" style="justify-self: center;" />
 
 
-        <div style="justify-self: center;">email<input type="text" id="email"></input>
+        <div style="justify-self: center;">
+            <label>email</label>
+            <input type="text" id="email"></input>
         </div>
 
-        <div style="justify-self: center;">password<input type="text" id="pass"></input>
+        <div style="justify-self: center;">
+            <label>password</label>
+            <input type="text" id="pass"></input>
         </div>
 
         <div style="justify-self: center;">
@@ -62,7 +66,6 @@
         <div> <a href="signUp.html">New User? sighUp</a></div>
 
     </div>
-
 
 </body>
 
